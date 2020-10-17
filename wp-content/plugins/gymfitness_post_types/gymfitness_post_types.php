@@ -64,6 +64,3 @@ function gymfitness_clases_post_type() {
 
 }
 add_action( 'init', 'gymfitness_clases_post_type', 0 );
-
-
-//864893038734623
