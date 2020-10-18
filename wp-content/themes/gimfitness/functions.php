@@ -45,7 +45,7 @@
       'id'    => "sidebar_1",
       'before_widget'=>'<div class="widget">',
       'after_widget'=>'</div>',
-      'before_title'=>'<h3>',
+      'before_title'=>'<h3 class="text-center texto-primario">',
       'after_title'=>'</h3>',
     ]);
     register_sidebar([
@@ -53,7 +53,7 @@
       'id'    => "sidebar_2",
       'before_widget'=>'<div class="widget">',
       'after_widget'=>'</div>',
-      'before_title'=>'<h3>',
+      'before_title'=>'<h3 class="text-center texto-primario">',
       'after_title'=>'</h3>',
     ]);
   }
