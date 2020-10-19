@@ -5,7 +5,6 @@
   <?php
     // Revisar si custom post type es clases
     if(get_post_type()==="gymfitness_clases"){
-      
       $hora_inicio  = get_field("hora_inicio");
       $hora_fin     = get_field("hora_fin");
   ?>          
