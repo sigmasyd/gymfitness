@@ -33,8 +33,16 @@
     wp_enqueue_style('googleFont', "https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700;900&family=Staatliches&display=swap", [], '1.0.0');
     wp_enqueue_style('style', get_stylesheet_uri(), ['normalize','googleFont'], '1.0.0');
 
+    if(is_page('galeria')){
+      wp_enqueue_style('lightboxCSS', get_template_directory_uri() . '/css/lightbox.min.css', [], '2.11.3');
+    }
+
     wp_enqueue_script("slicknavJS", get_template_directory_uri() . '/js/jquery.slicknav.min.js', ['jquery'], '1.0.10',true);
     wp_enqueue_script("scripts", get_template_directory_uri() . '/js/scripts.js', ['jquery','slicknavJS'], '1.0.0',true);
+
+    if(is_page('galeria')){
+      wp_enqueue_script("lightboxJS", get_template_directory_uri() . '/js/lightbox.min.js', ['jquery'], '2.11.3',true);
+    }
   }
   add_action('wp_enqueue_scripts','gymfitness_scripts_styles');
 
