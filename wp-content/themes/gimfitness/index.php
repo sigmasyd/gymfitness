@@ -1,2 +1,1 @@
-<?php
-print "index";
+<?php get_header(); ?>
