@@ -7,6 +7,9 @@
     // Habilitar imagenes destacadas
     add_theme_support( 'post-thumbnails' );
 
+    // Titulos SEO
+    add_theme_support( 'title-tag' );
+
     // Agregar custom imagenes sizes
     add_image_size('square',350,350,true);
     add_image_size('portrait',350,724,true);
