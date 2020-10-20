@@ -449,6 +449,23 @@ hr {
   font-weight: 700;
   font-size: 1.4rem;
 }
+/** Sidebar **/
+.widget{
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--grisClaro);
+}
+.widget:first-of-type{
+  padding: 0;
+}
+.widget:last-of-type{
+  border: none;
+}
+.widget a{
+  color: var(--black);
+}
+.widget a:hover{
+  color: var(--colorPrimario);
+}
 /** Galeria **/
 .galeria-imagenes{
   display: grid;
