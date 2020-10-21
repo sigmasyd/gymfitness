@@ -544,3 +544,7 @@ div.wpcf7-mail-sent-ol{
   color: var(--blanco);
   text-align: center;
 }
+/** Mapa **/
+#mapa{
+  height: 350px;
+}
