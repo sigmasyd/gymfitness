@@ -1,11 +1,11 @@
 <?php
-  function gymfitness_lista_clases(){
+  function gymfitness_lista_clases($cantidad = -1){
 ?>
     <ul class="lista-clases">
       <?php
         $args = [
           'post_type' => 'gymfitness_clases',
-          'posts_per_page' => 10, // asi esta bien
+          'posts_per_page' => $cantidad, // asi esta bien
           //'orderby' => 'title',
           //'order' => 'ASC'
         ];

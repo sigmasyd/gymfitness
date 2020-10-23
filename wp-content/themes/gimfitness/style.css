@@ -92,6 +92,32 @@ hr {
 .seccion {
   padding: 5rem 0;
 }
+.contenedor-boton{
+  display: flex;
+  justify-content: flex-end;
+}
+/** Boton **/
+.boton{
+  background-color: var(--blanco);
+  color: var(--black);
+  padding: 1rem 3rem;
+  display: block;
+  flex: 1;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+}
+@media (min-width: 768px) {
+  .boton{
+    display: inline-block;
+    flex: 0 0 auto;
+  }
+}
+.boton-primario{
+  background-color: var(--colorPrimario);
+  color: var(--blanco);
+}
 /** Header **/
 body.home .site-header{
   padding-top: 2rem;
@@ -649,4 +675,7 @@ div.wpcf7-mail-sent-ol{
   .area:hover p{
     opacity: 1;
   }
+}
+.clases{
+  background-color: var(--grisClaro);
 }
