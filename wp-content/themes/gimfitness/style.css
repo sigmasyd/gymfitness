@@ -586,3 +586,8 @@ div.wpcf7-mail-sent-ol{
 #mapa{
   height: 350px;
 }
+/** Front page **/
+.bienvenida p{
+  max-width: 800px;
+  margin: 0 auto;
+}
