@@ -12,7 +12,6 @@ jQuery(document).ready(($) => {
   });
 
   // Mapa de Leaflet
-
   const lat = document.querySelector('#lat').value,
         lng = document.querySelector('#lng').value,
         direccion = document.querySelector('#direccion').value;

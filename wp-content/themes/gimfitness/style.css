@@ -89,6 +89,9 @@ hr {
 .texto-primario {
   color: var(--colorPrimario);
 }
+.texto-blanco{
+  color: var(--blanco);
+}
 .seccion {
   padding: 5rem 0;
 }
@@ -734,4 +737,66 @@ div.wpcf7-mail-sent-ol{
 }
 .etiqueta:last-of-type{
   margin-right: 0;
+}
+/** Testimoniales **/
+.testimoniales{
+  background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(img/testimonial-bg.jpg);
+  padding: 12rem 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.contenedor-testimoniales{
+  max-width: 800px;
+  margin: 0 auto;
+}
+.testimonial{
+  color: var(--blanco); 
+}
+.testimonial blockquote{
+  position: relative;
+  padding-left: 12rem;
+}
+.testimonial blockquote::before{
+  position: absolute;
+  content: '';
+  display: block;
+  top: 0;
+  left: 0;
+  width: 10rem;
+  height: 9rem;
+  background-image: url(img/quote.svg);
+  background-repeat: no-repeat;
+}
+.testimonial-footer{
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .testimonial-footer{
+    justify-content: flex-end;
+  }
+}
+.testimonial-footer img{
+  margin-right: 2rem;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+.testimonial-footer p{
+  font-weight: 700;
+  color: var(--colorPrimario);
+}
+/** Reescribir BXSlider **/
+.bx-wrapper{
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+.bx-wrapper .bx-pager.bx-default-pager a,
+.bx-wrapper .bx-pager.bx-default-pager a:hover{
+  background: var(--blanco);
+}
+.bx-wrapper .bx-pager.bx-default-pager a.active{
+  background: var(--colorPrimario);
 }
