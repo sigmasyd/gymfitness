@@ -154,6 +154,24 @@ body.home .site-header{
     justify-content: space-between;
   }
 }
+/** Barra fija **/
+@media (min-width: 768px) {
+  .fixed-top{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--grisOscuro);
+    padding: 1rem 5rem;
+    height: 10rem;
+    z-index: 10000;
+    transition: all .3s ease;
+  }
+  .fixed-top img{
+    width: 12rem;
+    height: 10rem;
+  }
+}
 .logo {
   text-align: center; /* Se puede centrar con una linea o usar flexbox, abajo*/
   display: flex;
