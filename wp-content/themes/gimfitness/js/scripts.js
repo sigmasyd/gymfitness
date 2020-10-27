@@ -38,12 +38,16 @@ window.onscroll = () => {
   const scroll = window.scrollY;
   console.log('scrolling ... ' , scroll);
   const headerNav = document.querySelector('.barra-navegacion');
+  const documentBody = document.querySelector('body');
+
   // si la cantidad de scroll es mayor a, agregar clase
   if(scroll>300){
     console.log('si');
     headerNav.classList.add('fixed-top');
+    documentBody.classList.add('ft-activo');
   }else{
     console.log('no');
     headerNav.classList.remove('fixed-top');
+    documentBody.classList.remove('ft-activo');
   }
 }
