@@ -10,7 +10,9 @@
     <div class="contenedor header-grid">
       <div class="barra-navegacion">
         <div class="logo">
-          <img src="<?php print get_template_directory_uri(); ?>/img/logo.svg" alt="Logo sitio">
+          <a href="<?php print site_url(); ?>">
+            <img src="<?php print get_template_directory_uri(); ?>/img/logo.svg" alt="Logo sitio">
+          </a>
         </div>
         <?php 
           $args = array(
